@@ -9,6 +9,9 @@ To use, build Allegro5 and put the .so files in lib/
 
 Look at test.rkt to get an idea of how it can be used.
 
+
+
+
 Quick build instructions for Allegro5 on any unix system
  
  $ cd allegro5
@@ -32,3 +35,5 @@ Here is my lib directory so you can see how to set it up
  lrwxrwxrwx 1 jon jon 45 2011-03-08 16:05 liballegro.so -> /home/jon/svn/allegro/5.0/b/lib/liballegro.so*
  lrwxrwxrwx 1 jon jon 49 2011-03-08 16:05 liballegro_ttf.so -> /home/jon/svn/allegro/5.0/b/lib/liballegro_ttf.so*
  lrwxrwxrwx 1 jon jon 41 2011-03-08 16:05 pkgconfig -> /home/jon/svn/allegro/5.0/b/lib/pkgconfig/
+
+
