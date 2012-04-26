@@ -6,12 +6,13 @@
                      syntax/parse))
 
 (define-runtime-path library-path (build-path "lib"))
-(define liballegro (ffi-lib (build-path library-path "liballegro")))
-(define image-addon (ffi-lib (build-path library-path "liballegro_image")))
-(define font-addon (ffi-lib (build-path library-path "liballegro_font")))
-(define ttf-addon (ffi-lib (build-path library-path "liballegro_ttf")))
-(define primitives-addon (ffi-lib (build-path library-path "liballegro_primitives")))
-(define acodec-addon (ffi-lib (build-path library-path "liballegro_acodec")))
+(define version-spec '("5" #f))
+(define liballegro (ffi-lib (build-path library-path "liballegro") version-spec))
+(define image-addon (ffi-lib (build-path library-path "liballegro_image") version-spec))
+(define font-addon (ffi-lib (build-path library-path "liballegro_font") version-spec))
+(define ttf-addon (ffi-lib (build-path library-path "liballegro_ttf") version-spec))
+(define primitives-addon (ffi-lib (build-path library-path "liballegro_primitives") version-spec))
+(define acodec-addon (ffi-lib (build-path library-path "liballegro_acodec") version-spec))
 
 (define-syntax allegro-function
   (syntax-rules (:)
